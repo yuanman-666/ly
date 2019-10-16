@@ -26,7 +26,6 @@ public class UploadController {
         if(url == null || "".equals(url)){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST); //上传失败
         }
-        System.out.println("");
         return ResponseEntity.ok(url) ;
     }
 
